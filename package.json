@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/aquerry/aquerry.github.io/issues"
   },
-  "homepage": "https://aquerry.github.io",
+  "homepage": "https://aquerry.github.io/blog",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
