@@ -1,3 +1,37 @@
+@font-face {
+    font-family: Arvo-Bold;
+    src: url('../fonts/Arvo/Arvo-Bold.ttf');
+}
+
+@font-face {
+    font-family: Arvo-BoldItalic;
+    src: url('../fonts/Arvo/Arvo-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: EB_Garamond;
+    src: url('../fonts/EB_Garamond/EBGaramond-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: Arvo-Bold;
+    text-align: center;
+    color: white;
+}
+
+h1.italic, h2.italic, h3.italic, h4.italic, h5.italic, h6.italic, h7.italic {
+    font-family: Arvo-BoldItalic;
+}
+
+.portrait {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 215px;
+    width: auto;
+}
+
+
 .background {
     margin-bottom: 0;
     background-color: #aeaeae;
@@ -14,20 +48,41 @@
     height: 90%;
     margin-top: 2.5%;
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 08);
+    padding: .75em;
+}
+
+.center-piece .content {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .banner {
     height: 95%;
     margin-top: 1.25%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
+}
+
+.half-height {
+    height: 50%
+}
+
+.auto-height {
+    height: auto;
 }
 
 .full-height {
     height: 100%;
 }
 
+html, body {
+    color: white;
+    font-family: EB_Garamond;
+}
+
 html, body, div {
     height: 100%
 }
+
 div.outer-pic-wrapper {
     margin-left: auto; 
     margin-right: auto;
@@ -44,4 +99,37 @@ div.inner-pic-wrapper img {
     filter: gray;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
+}
+
+.scrollable {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    max-height: 200px;
+    margin: 0 10px;
+    background: #1976d2 no-repeat;
+    background-image: -webkit-radial-gradient(50% 0, farthest-side, rgba(255,255,255,0.6), rgba(0,0,0,0)), -webkit-radial-gradient(50% 100%,farthest-side, rgba(255,255,255,0.6), rgba(0,0,0,0));
+    background-image: -moz-radial-gradient(50% 0, farthest-side, rgba(255,255,255,0.6), rgba(0,0,0,0)), -moz-radial-gradient(50% 100%,farthest-side, rgba(255,255,255,0.6), rgba(0,0,0,0));
+    background-image: radial-gradient(farthest-side at 50% 0, rgba(255,255,255,0.6), rgba(0,0,0,0)), radial-gradient(farthest-side at 50% 100%, rgba(255,255,255,0.6), rgba(0,0,0,0));
+    background-position: 0 0, 0 100%;
+    background-size: 100% 14px;
+}
+
+.scrollable:before, .scrollable:after {
+    content: "";
+    position: relative;
+    z-index: -1;
+    display: block;
+    height: 30px;
+    margin: 0 0 -30px;
+    background: -webkit-linear-gradient(top,#1976d2,#1976d2 30%,rgba(255,255,255,0));
+    background: -moz-linear-gradient(top,#1976d2,#1976d2 30%,rgba(255,255,255,0));
+    background: linear-gradient(to bottom,#1976d2,#1976d2 30%,rgba(255,255,255,0));
+}
+
+.scrollable:after {
+    margin: -30px 0 0;
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0),#1976d2 70%,#1976d2);
+    background: -moz-linear-gradient(top,rgba(255,255,255,0),#1976d2 70%,#1976d2);
+    background: linear-gradient(to bottom,rgba(255,255,255,0),#1976d2 70%,#1976d2);
 }

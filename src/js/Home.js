@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import '../materialize/css/materialize.css'
 import '../styles/home.css'
+import '../fonts/Arvo/Arvo-Bold.ttf'
+import portrait from '../IMG_5300.png'
 
 const imgs = require.context("../../public", true, /^\.\/home\/.*\.jpg$/)
 
@@ -25,6 +27,23 @@ class Home extends Component {
                 </div>
                 <div className="foreground row">
                     <div className={"center-piece col l4 m6 s10 blue darken-2 offset-l4 offset-m3 offset-s1"}>
+                        <div className="half-height">
+                            <div className="row auto-height">
+                                <h4 className="col offset-s1 s10">Abby Querry</h4>
+                                <br />
+                                <h6 className="col offset-s2 s8 italic">Class of 2019</h6>
+                            </div>
+                            <div className="row auto-height">
+                                <img className="portrait" src={portrait}/>
+                            </div>
+                        </div>
+                        <div className="half-height">
+                            <div className="row auto-height">
+                                <div className="scrollable content auto-height">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
