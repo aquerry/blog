@@ -27,14 +27,16 @@ class Home extends Component {
                 </div>
                 <div className="foreground row">
                     <div className={"center-piece col l4 m6 s10 blue darken-2 offset-l4 offset-m3 offset-s1"}>
-                        <div className="half-height">
-                            <div className="row auto-height">
-                                <h4 className="col offset-s1 s10">Abby Querry</h4>
-                                <br />
-                                <h6 className="col offset-s2 s8 italic">Class of 2019</h6>
-                            </div>
-                            <div className="row auto-height">
-                                <img className="portrait" src={portrait}/>
+                        <div className="auto-height">
+                            <div className="row no-margin">
+                                <div className="col l12 m6 s12">
+                                    <h4 className="col offset-s1 s10">Abby Querry</h4>
+                                    <br />
+                                    <h6 className="col offset-s2 s8 italic">Class of 2019</h6>
+                                </div>
+                                <div className="col l12 m6 s12 half-height">
+                                    <img className="full-height portrait" src={portrait}/>
+                                </div>
                             </div>
                         </div>
                         <div className="half-height">
